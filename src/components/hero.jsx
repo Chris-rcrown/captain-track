@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="bg-[#F7B933] w-full mx-auto px-[16px] md:h-[613px]  ">
         <NavBar/>
-        <div className="flex mx-auto  max-w-[1440px]  flex-col md:flex-row justify-between" >
+        <div className="flex mx-auto  lg:max-w-[1440px]  flex-col md:flex-row justify-between" >
             <div className=" pt-[14px] w-[305px] h-[200px]   md:pt-[130px] md:w-[634px] md:h-[216px] ">
 
                 <h1 className="text-[36px] md:text-[60px] w-[305px] md:w-[634px] leading-[39.6px] md:leading-[72px] font-bold  ">Your All-in-One On-Demand Services Platform</h1>
