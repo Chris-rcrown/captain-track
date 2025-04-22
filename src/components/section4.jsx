@@ -11,10 +11,10 @@ const Section4 = () => {
                 <div className='w-[354px] h-[227px] md:w-[447px] md:h-[114px] flex flex-col items-center text-center justify-center gap-[16px] '>
                     <h2 className='font-semibold text-[24px] leadinig-[28.8px] md:text-[42px] md:w-[500px] '>All-in-One Convenience</h2>
                     <div className='w-[286px] h-[40px] flex gap-[16px]'>
-                        <Link>
+                        <Link to="https://www.apple.com/app-store/" >
                             <img src={appStore} alt="Apple Store" />
                         </Link>
-                        <Link>
+                        <Link to="https://play.google.com/store/apps?hl=en&pli=1">
                             <img src={playStore} alt="Play Store" />
                         </Link>
                     </div>

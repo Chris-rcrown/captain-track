@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Section3 = () => {
   return (
     <div className='  w-full md:self-center'>
-        <div className= "bg-[url('/src/design/Bg.png')] w-[402px] h-[663px] md:w-auto md:h-[990px] md:mx-auto max-w-[1440px] md:pt-[80px] flex flex-col text-center  rounded-lg items-center ">
+        <div className= "bg-[url('/src/design/Bg.png')] w-[402px] h-[663px] md:w-auto md:h-[990px] md:mx-auto max-w-[1440px] md:pt-[80px] flex flex-col text-center  rounded-lg items-center  ">
 
             <div className='mt-[64px] md:mt-0 md:w-[840px] h-[228px] flex flex-col gap-[32px]  md:self-center text-white items-center justify-center'>
                 <div className='flex flex-col gap-[4px] w-[354px] text-center items-center '>
