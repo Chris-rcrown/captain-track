@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../design/CaptainTrack (1) (1) 2.png';
+import Logo from '../design/CaptainTrack2.png'
 import { NavLink, Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { companyLocation, contactSupport, footerNav } from '../data/footer';
