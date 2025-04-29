@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './NavBar';
+import NavBar from './navBar';
 import HeroPhones from '../design/Group 1.png';
 
 const Hero: React.FC = () => {

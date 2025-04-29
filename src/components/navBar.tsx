@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../design/CaptainTrack (1) (1) 1.png';
+import Logo from '../design/CaptainTrack1.png';
 import hamburger from '../design/fi-sr-menu-burger.png';
 import closeIcon from '../design/gridicons_cross.png';
 import { navData } from '../data/navData';

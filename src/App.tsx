@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+// import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
 import Hero from './components/hero';
@@ -11,7 +11,7 @@ import Footer from './components/footer';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    // <Router>
       <div className="App">
         <Hero />
         <Section1 />
@@ -20,7 +20,7 @@ const App: React.FC = () => {
         <Section4 />
         <Footer />
       </div>
-    </Router>
+      // {/* </Router> */}
   );
 };
 

@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
             <h4 className="text-[20px] leading-[23.87px] font-bold pt-[40px] md:pt-0">
               Contact Support
             </h4>
-            {contactSupport.map((item: SupportItem, idx: number) => (
+            {contactSupport.map((item, idx) => (
               <NavLink key={idx} to={item.link} className="block">
                 <p>{item.phone}</p>
                 <p>{item.email}</p>
