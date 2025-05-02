@@ -17,12 +17,12 @@ const Section1: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center">
 
-      <Carousel images = {slides} autoplay = {true} autoplayInterval ={3000} />
-      {/* <img
+      {/* <Carousel images = {slides} autoplay = {true} autoplayInterval ={3000} /> */}
+      <img
         className="pt-[72px] w-[338px] md:w-[1023px]"
         src={Section1Pic}
         alt="Section Illustration"
-      /> */}
+      />
 
       <div className="flex flex-col gap-[16px] mt-[32px] items-center">
         <p className="text-[30px] font-semibold">Order anything, anywhere.</p>

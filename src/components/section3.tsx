@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import tradeCrypto from '../design/Black iPhone 16e mockup front view 1.png';
-import tradeCryptoMobile from '../design/Black iPhone 16e mockup front mobile-view 1.png';
+// import tradeCrypto from '../design/Black iPhone 16e mockup front view 1.png';
+import sectionPhone from '../design/sectionphone.png';
 import { AboutCapTrck } from '../data/services';
 
 // Interface for service items
@@ -40,12 +40,12 @@ const Section3: React.FC = () => {
         </div>
 
         <img
-          src={tradeCrypto}
+          src={sectionPhone}
           alt="Device showcasing app"
           className="hidden md:flex w-[429.39px] h-[869px] self-center mt-[56px]"
         />
         <img
-          src={tradeCryptoMobile}
+          src={sectionPhone}
           alt="Device mobile view"
           className="md:hidden w-[241px] h-[487px] self-center mt-[50px]"
         />

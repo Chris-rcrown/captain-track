@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './navBar';
-import HeroPhones from '../design/Group 1.png';
+import HeroPhones from '../design/herophone-desktop.png';
 
 const Hero: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="flex relative min-w-[329.27px] min-h-[331.22px] max-h-[598px] max-w-[594px]">
-          <img src={HeroPhones} alt="phones" className="mt-[50px] md:mt-[83px] h-auto w-auto" />
+          <img src={HeroPhones} alt="phones" className="mt-[50px] md:mt-[25px] h-auto w-auto" />
         </div>
       </div>
     </div>
