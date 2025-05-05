@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import tradeCrypto from '../design/Black iPhone 16e mockup front view 1.png';
-import sectionPhone from '../design/sectionphone.png';
-import { AboutCapTrck } from '../data/services';
+import sectionPhone from '../../design/sectionphone.png';
+import { AboutCapTrck } from '../../data/services';
 
 // Interface for service items
 interface ServiceItem {
   pic: string;
   title: string;
   desc: string;
+  link?: string; // Optional link property
+  button?: string; // Optional button property
 }
+
 
 const Section3: React.FC = () => {
   const services = AboutCapTrck as ServiceItem[];
@@ -59,7 +62,7 @@ const Section3: React.FC = () => {
               className="flex flex-col md:flex-row justify-between items-center md:last:flex-row-reverse gap-[24px] md:gap-[17px]"
             >
               <div className="w-[354px] md:w-[614px] rounded-lg">
-                <img src={item.pic} alt={item.title} className="" />
+                <img src={item.pic} alt={item.title} className=" " />
               </div>
               <div className="flex flex-col gap-[8px] w-[354px] md:w-[549px] md:h-[279px]">
                 <h2 className="text-[24px] md:text-[48px] leading-[28.8px] md:leading-[57.6px] font-bold">
@@ -68,6 +71,14 @@ const Section3: React.FC = () => {
                 <p className="text-[16px] md:text-[24px] leading-[20.8px] md:leading-[31.2px] md:h-[155px]">
                   {item.desc}
                 </p>
+                
+                {item.link && (
+                  <Link to={item.link} className="self-left">
+                    <button className="cursor-pointer mt-[15px] bg-[#F5A800] py-[12px] px-[24px] text-[20px] text-black leading-[24px] rounded-xl font-semibold">
+                      {item.button}
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           ))}

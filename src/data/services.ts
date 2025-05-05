@@ -19,6 +19,8 @@ export interface AboutCapTrckItem {
   pic: string;
   title: string;
   desc: string;
+  link?: string; // Optional link property
+  button?: string; // Optional button property
 }
 
 export const serviceData: ServiceItem[] = [
@@ -64,10 +66,14 @@ export const AboutCapTrck: AboutCapTrckItem[] = [
     pic: earnMore,
     title: 'Earn more with CaptainTrack',
     desc: "Become a CaptainTrack driver and gain access to a steady stream of customers. Whether you're a ride-hailing driver, tow truck operator, or service provider, our platform connects you with people who need your services",
+    button: 'Register as a Driver', 
+    link: '/driver',
   },
   {
     pic: expandCus,
     title: 'Expand your Customer Reach',
     desc: "Become a CaptainTrack driver and gain access to a steady stream of customers. Whether you're a ride-hailing driver, tow truck operator, or service provider, our platform connects you with people who need your services",
+    button: 'Register as a Merchant',
+    link: '/merchant',
   },
 ];

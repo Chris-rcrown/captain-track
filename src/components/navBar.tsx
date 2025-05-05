@@ -4,35 +4,55 @@ import Logo from '../design/CaptainTrack1.png';
 import hamburger from '../design/fi-sr-menu-burger.png';
 import closeIcon from '../design/gridicons_cross.png';
 import { navData } from '../data/navData';
+import DownloadButton from './DownloadButton';
 
 // Type for navigation items
-interface NavItem {
+ export interface NavItem {
   title: string;
   link: string;
 }
 
-const NavBar: React.FC = () => {
+export interface NavBarProps {
+  className?: string;
+  logoSrc? : string;
+  downloadLabel?: string;
+  downloadClassName?: string;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ 
+  className = 'text-black', logoSrc = Logo
+, downloadLabel = 'Download App', downloadClassName = 'px-4 py-2 bg-black text-white rounded'
+}) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const items = navData as NavItem[];
 
   return (
-    <div className="py-[16px] w-full">
+    <div className={`py-[16px] w-full bg-transparent ${className}`}>
       <div className="mx-auto max-w-[1440px]">
         <nav className="flex justify-between">
-          <img className="w-auto h-[32px]" src={Logo} alt="Logo" />
+          <NavLink to= '/'>
+            <img className="w-auto h-[32px]" src={logoSrc} alt="Logo" />
+          </NavLink>
 
           {/* Desktop menu */}
-          <ul className="hidden md:flex justify-around items-center gap-[32px] w-[591px] h-[42px]">
+          <ul className="hidden lg:flex justify-around items-center gap-[32px] w-[591px] h-[42px]">
             {items.map((item, idx) => (
               <li key={idx} className="text-[16px] leading-[20.24px] font-semibold">
                 <NavLink to={item.link}>{item.title}</NavLink>
               </li>
             ))}
+            {/* your Download button */}
+            <li>
+              <DownloadButton 
+                label={downloadLabel}
+                className={downloadClassName} 
+              />
+            </li>
           </ul>
 
           {/* Mobile menu toggle */}
           <button
-            className="md:hidden absolute right-6"
+            className="lg:hidden absolute right-6"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -45,7 +65,7 @@ const NavBar: React.FC = () => {
               <div className="flex justify-between items-center">
                 <img className="w-[174.32px] h-[28px]" src={Logo} alt="Logo" />
                 <button
-                  className="md:hidden"
+                  className="lg:hidden"
                   onClick={() => setMenuOpen(false)}
                   aria-label="Close menu"
                 >
@@ -64,6 +84,13 @@ const NavBar: React.FC = () => {
                     </NavLink>
                   </li>
                 ))}
+                {/* your Download button */}
+            <li>
+              <DownloadButton 
+                label={downloadLabel}
+                className={downloadClassName} 
+              />
+            </li>
               </ul>
             </div>
           )}

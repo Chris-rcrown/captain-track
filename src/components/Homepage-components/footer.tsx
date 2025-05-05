@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../design/CaptainTrack2.png'
+import Logo from '../../design/CaptainTrack2.png'
 import { NavLink, Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
-import { companyLocation, contactSupport, footerNav } from '../data/footer';
+import { companyLocation, contactSupport, footerNav } from '../../data/footer';
 
 // Type definitions for footer link items
 interface NavItem {
@@ -19,7 +19,7 @@ interface SupportItem {
 const Footer: React.FC = () => {
   return (
     <div className="bg-[#151515] text-white h-auto md:h-[538px]">
-      <div className="pt-[200px] md:pt-[223px] md:px-[80px] flex flex-col md:flex-row justify-between">
+      <div className="pt-[200px] md:pt-[223px] px-3 md:px-[0px] flex flex-col md:flex-row justify-between max-w-[1440px] mx-auto gap-[40px] md:gap-[0px]">
         <div>
           <img src={Logo} alt="CaptainTrack Logo" />
 

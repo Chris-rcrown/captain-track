@@ -1,8 +1,8 @@
 import React from 'react';
-import Carousel from './carousel';
-import Section1Pic from '../design/Property 1=Default.png';
-import appStoreBadge from '../design/Mobile app store badge.png';
-import googleStoreBadge from '../design/Mobile app store badge (1).png';
+import Carousel from '../carousel';
+import Section1Pic from '../../design/Property 1=Default.png';
+import appStoreBadge from '../../design/Mobile app store badge.png';
+import googleStoreBadge from '../../design/Mobile app store badge (1).png';
 import { Link } from 'react-router-dom';
 
 const slides = [

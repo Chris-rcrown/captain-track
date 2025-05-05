@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -10,8 +10,8 @@ if (!container) throw new Error('Root element not found');
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
       <App />
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
   </React.StrictMode>
 );

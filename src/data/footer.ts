@@ -21,6 +21,7 @@ export const footerNav: FooterNavItem[] = [
   { title: 'About', link: '/about' },
   { title: 'Career', link: '/career' },
   { title: 'FAQ', link: '/faq' },
+  { title: 'Support', link: '/support' },
   { title: 'User Policy', link: '/user-policy' },
   { title: 'Privacy Policy', link: '/privacy-policy' },
 ];

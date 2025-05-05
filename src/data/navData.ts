@@ -12,19 +12,28 @@ export const navData: NavItem[] = [
     link: '/company',
   },
   {
-    title: 'Earn with CaptainTrack',
-    link: '/earn',
+    title: 'Drive',
+    link: '/driver',
   },
   {
-    title: 'Blog',
-    link: '/blog',
+    title: 'Add Shop',
+    link: '/merchant',
   },
+  // {
+  //   title: 'Contact Us',
+  //   link: '/contact-us',
+  // },
   {
-    title: 'Support',
-    link: '/support',
+    title: 'FAQ',
+    link: '/faq',
   },
-  {
-    title: 'Register',
-    link: '/register',
-  },
+  // {
+  //   title: 'Blog',
+  //   link: '/blog',
+  // },
+  // {
+  //   title: 'Support',
+  //   link: '/support',
+  // },
+  
 ];
